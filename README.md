@@ -1,24 +1,35 @@
-# README
+##### 1. Prerequisites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The setups steps expect following tools installed on the system.
 
-Things you may want to cover:
+- Github
+- Ruby [3.0.1](https://github.com/Vivek3927/scraper_application.git)
+- Rails [6.1.5](https://github.com/Vivek3927/scraper_application.git)
 
-* Ruby version
+##### 2. Check out the repository
 
-* System dependencies
+```bash
+git clone https://github.com/Vivek3927/scraper_application.git
+cd scraper_application
+bundle install
+```
 
-* Configuration
+##### 3. Create and setup the database
 
-* Database creation
+Run the following commands to create and setup the database.
 
-* Database initialization
+```ruby
+rails db:create
+rails db:migrate
+```
 
-* How to run the test suite
+##### 4. Start the Rails server
 
-* Services (job queues, cache servers, search engines, etc.)
+You can start the rails server using the command given below.
 
-* Deployment instructions
+```ruby
+rails s
+```
 
-* ...
+And now you can visit the site with the URL http://localhost:3000/companies
+
